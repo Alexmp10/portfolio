@@ -1,0 +1,40 @@
+
+.item1{
+  grid-area: header;
+}
+
+.item2{
+  grid-area: mbody;
+}
+
+.item3{
+  grid-area: sidebar;
+
+}
+
+.item4{
+  grid-area: footer;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto 23%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "mbody sidebar"
+    "footer footer";
+}
+
+/*Information*/
+.work{
+  
+}
+
+.education{
+
+}
+
+.extra{
+
+}
