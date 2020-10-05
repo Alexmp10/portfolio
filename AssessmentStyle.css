@@ -1,57 +1,72 @@
+/* Element styling override */
 body{
   margin: 0px;
 }
+h1{
+  margin: 0px;
+  color: #364356;
+}
+h2{
+  margin: 0px;
+  color: #364356;
+  font-style: italic;
+}
+h3{
+  margin-bottom: 0px;
+}
+h4{
+  margin-top: 0px;
+}
 
-.item1{
+/* Major components */
+.header{
   grid-area: header;
   background-color: #FA5D6B;
   padding:  10px;
 }
-
-.item2{
-  grid-area: mbody;
+.main-body{
+  grid-area: main-body;
   padding:  10px;
 }
-
-.item3{
+.sidebar{
   grid-area: sidebar;
   background-color: #EDECEA;
   padding:  10px;
 }
-
-.item4{
+.footer{
   grid-area: footer;
   background-color: #364356;
   text-align: center;
 }
-
-.grid-container{
+.grid-container-master{
   display: grid;
   grid-template-columns: auto 23%;
   grid-template-rows: auto;
   grid-template-areas:
     "header header"
-    "mbody sidebar"
+    "main-body sidebar"
     "footer footer";
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.item5{
+/* Header styling */
+.picture{
   grid-area: picture;
-
+  height: 100px;
+  text-align: center;
 }
-
-.item6{
+.picture2{
+  grid-area: picture;
+  height: 170px;
+  text-align: center;
+  margin-top: 2px;
+}
+.profile-picture{
+  grid-area: picture;
+}
+.name-title{
   grid-area: name;
-
-
 }
-
-.grid-container-head{
+.grid-container-header{
   display: grid;
   grid-template-columns: 100px auto;
   grid-template-rows: auto;
@@ -60,53 +75,28 @@ body{
   grid-template-areas:
     "picture name";
 }
-/*Information*/
+
+/* Main body styling */
+.section-title{
+  color: #BD9F63;
+  border-bottom: 3px solid #FA5D6B;
+}
+.subsection-title {
+  display: flex;
+  justify-content: space-between;
+}
 .work{
 
 }
-
 .education{
 
 }
-
 .extra{
 
 }
 
-.picture{
-  grid-area: picture;
-  height: 100px;
-  text-align: center;
-}
-
-/*Font style*/
-
-h1{
-  margin: 0px;
-  color: #364356;
-}
-
-h2{
-  margin: 0px;
-  color: #364356;
-  font-style: italic;
-
-}
-
-h3{
-  margin-bottom: 0px;
-}
-
-h4{
-  margin-top: 0px;
-}
-
-.texth2{
-  color: #BD9F63;
-  border-bottom: 3px solid #FA5D6B;
-}
-
-.texth3{
+/* Footer styling */
+.footer-text{
   color: #BD9F63;
   margin-bottom: 20px;
   text-align: center;
